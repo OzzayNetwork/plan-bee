@@ -45,7 +45,7 @@
 	--bg-color: #faf9ff;
 	--bg-2: #f0ecff;
 	--body-color: #0C005B;
-	--theme-color: #6e41fe;
+	--theme-color: #030081;
 	--theme-color-2: #4777f4;
 	--theme-color-3: #2024b0;
 	--theme-color-sec: #255dff;
@@ -519,7 +519,7 @@ header.header {
 .navbar-nav .nav-item:active>.nav-link,
 .navbar-nav .nav-item:focus>.nav-link,
 .navbar-nav .nav-item:hover>.nav-link {
-    color: #F13B13;
+    color:#ffd301;
 }
 
 .navbar.sticked.in .navbar-nav .nav-item.active>.nav-link,
@@ -1720,7 +1720,7 @@ header.header {
 	width: 0;
 	top: 0;
 	right: 0;
-	background-color: var(--theme-color);
+	background-color:#030081;
 	-webkit-transition: .5s ease;
 	transition: .5s ease;
 }
@@ -1795,7 +1795,7 @@ header.header {
     top: 0;
     /* left: 125px; */
     -webkit-border-radius: 0 0 0 150px;
-    border-radius: 150px 0px 0px 0px;
+    border-radius: 150px 0px 60px 0px;
 }
 
 .service-animation img {
@@ -3812,7 +3812,7 @@ header.header.single-head .navbar.in {
     border-radius: 40px 0px 40px 0px;
     width: 100vw;
     max-width: 350px !important;
-    border: 2px solid #037bff;
+    border: 2px solid #001d81;
     padding: 1rem;
 }
 .myabout-container{
@@ -3891,6 +3891,7 @@ header.header.single-head .navbar.in {
     font-weight: 900;
     line-height: 1.2em;
     font-size: 60px;
+    color: #ffd301;
 }
 .down-image-container{
     position: relative;
@@ -3899,6 +3900,48 @@ header.header.single-head .navbar.in {
     position: absolute;
     width: 100%;
     border-radius: 0px 50px 0px 50px;
-    height: 490px;
+    height: 530px;
     width: auto;
+    padding: 1.5rem;
+    border: 2px solid #ffd300;
 }
+.bg-comb:before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-image: url("/assets/img/about/cob-pattern.svg");
+    top: 0;
+    left: 0;
+    background-position: right;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+.bg-primary{
+    background:#030081 !important;
+   
+    background-color: #030081 !important;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  .text-secondary{
+      color: #ffd301 !important;
+  }
+  .text-seconary-2{
+      color: #f1b900 !important;
+  }
+  .btn-secondary-alt{
+    border-color: #ffd300;
+    background-color: transparent;
+    color: #ffd300;
+  }
+  .btn-secondary-alt:hover{
+      color: ;
+  }
+  .btn-secondary-alt::before{
+      background-color: #001d81;
+  }
+  
