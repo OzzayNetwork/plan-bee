@@ -44,7 +44,7 @@
 	--heading-color: #333333;
 	--bg-color: #faf9ff;
 	--bg-2: #f0ecff;
-	--body-color: #797979;
+	--body-color: #0C005B;
 	--theme-color: #6e41fe;
 	--theme-color-2: #4777f4;
 	--theme-color-3: #2024b0;
@@ -639,7 +639,8 @@ header.header {
     text-transform: capitalize;
     line-height: 1.2;
     font-size: 3.8rem;
-	margin-bottom: 0;
+    margin-bottom: 0;
+    color: #0C005B;
 }
 
 .site-title.wh h2 {
@@ -650,7 +651,20 @@ header.header {
 	color: var(--theme-color);
 	display: block;
 	margin-bottom: 2rem;
-	text-transform: lowercase;
+    text-transform: lowercase;
+    
+    padding: 5px 17px;
+    background: #FFD301;
+    font-weight: bold;
+    width: auto;
+    display: inline;
+    border-radius: 22px 0px 21px 0px;
+    /* text-transform: uppercase; */
+    /* font-size: 12px; */
+    /* letter-spacing: 2px; */
+    color: #05115b9c;
+    margin-bottom: 0px;
+    text-transform: capitalize;
 }
 
 .hero-p1 {
@@ -1714,9 +1728,17 @@ header.header {
 .serv-box:hover::before {
 	width: 100%;
 }
+.serv-box:hover .serve-box-img img {
+	opacity: 1 !important;
+}
+.serv-box:hover .top-sub{
+    background-color: white;
+    background: white;
+    color: blue;
+}
 
 .serv-icon i {
-	font-size: 4rem;
+	font-size: 6rem;
 	display: inline-block;
 	color: var(--theme-color);
 	margin-bottom: 2rem;
@@ -1768,12 +1790,12 @@ header.header {
     z-index: -1;
     content: '';
     height: 100%;
-    width:  100%;
+    width: 100%;
     background-color: var(--bg-2);
     top: 0;
-    left: 125px;
-	-webkit-border-radius: 0 0 0 150px;
-    border-radius: 0 0 0 150px;
+    /* left: 125px; */
+    -webkit-border-radius: 0 0 0 150px;
+    border-radius: 150px 0px 0px 0px;
 }
 
 .service-animation img {
@@ -3779,3 +3801,104 @@ header.header.single-head .navbar.in {
     line-height: 1.3;
 }
 
+.bg-primary-light{
+    background-color: #eae3f340 !important;
+}
+.border-0{
+    border-radius: 0px !important;
+}
+.my-about-img{
+    width: 65%;
+    border-radius: 40px 0px 40px 0px;
+    width: 100vw;
+    max-width: 350px !important;
+    border: 2px solid #037bff;
+    padding: 1rem;
+}
+.myabout-container{
+    background-color: #FF5050;
+    padding: 30px 40px 30px 40px;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 30px 0px 30px 0px;
+    color: white;
+
+}
+.myabout-container p{
+    color: white !important;
+}
+.my-about-msg{
+    position: absolute;
+    bottom: -62px;
+    left: 30%;
+}
+.serv-box p{
+    font-size: 14px;
+    line-height: 2.7rem;
+}
+.serv-content h4{
+    font-size: 20px;
+    color: #0C005B;
+}
+.about-img{
+    /* background-image: url("/assets/img/about/honey-bg.svg"); */
+    position: relative;
+}
+.hive-1{
+    position: absolute;
+    top: -14%;
+    left: -132px;
+    z-index: -1;
+    height: 270px;
+}
+
+.hive-2{
+    position: absolute;
+    bottom: 7%;
+    right: -72px;
+    z-index: -1;
+    height: 270px;
+}
+.hive-3{
+    position: absolute;
+    top: -7%;
+    right: -72px;
+    z-index: -1;
+    height: 400px;
+}
+
+.serve-box-img{
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.2;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+}
+.serve-box-img img{
+    height: 100%;
+  
+    opacity: 0;
+}
+.font-12px{
+    font-size: 12px !important;
+}
+.weight-900{
+    font-weight: 900;
+    line-height: 1.2em;
+    font-size: 60px;
+}
+.down-image-container{
+    position: relative;
+}
+.down-image-container img{
+    position: absolute;
+    width: 100%;
+    border-radius: 0px 50px 0px 50px;
+    height: 490px;
+    width: auto;
+}
