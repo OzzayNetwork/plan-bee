@@ -3943,5 +3943,9 @@ html {
   }
   .btn-secondary-alt::before{
       background-color: #001d81;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
   }
   
