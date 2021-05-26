@@ -11,13 +11,13 @@
     $(document).on('ready', function() {
 
 
-		/* ==================================================
-			# Data Background
-		 ===============================================*/
+        /* ==================================================
+        	# Data Background
+         ===============================================*/
 
-		$("[data-background]").each(function(){
-			$(this).css("background-image","url(" + $(this).attr("data-background") +")");
-		});
+        $("[data-background]").each(function() {
+            $(this).css("background-image", "url(" + $(this).attr("data-background") + ")");
+        });
 
         /* ==================================================
             # Wow Init
@@ -30,14 +30,14 @@
             live: true // act on asynchronously loaded content (default is true)
         });
         wow.init();
-	
-		
-		
+
+
+
         /* ==================================================
             # Smooth Scroll
          =============================================== */
-        
-		$("body").scrollspy({
+
+        $("body").scrollspy({
             target: ".navbar-collapse",
             offset: 200
         });
@@ -49,39 +49,39 @@
             }, 1500, 'easeInOutExpo');
             event.preventDefault();
         });
-		
 
-		 /* ==================================================
+
+        /* ==================================================
             # Scroll to top
          =============================================== */
-			//Get the button
-			var mybutton = document.getElementById("scrtop");
+        //Get the button
+        var mybutton = document.getElementById("scrtop");
 
-			// When the user scrolls down 20px from the top of the document, show the button
-			window.onscroll = function() {scrollFunction()};
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() { scrollFunction() };
 
-			function scrollFunction() {
-			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				mybutton.style.display = "block";
-			  } else {
-				mybutton.style.display = "none";
-			  }
-			}
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
-		 /* ==================================================
+        /* ==================================================
             # Youtube Video Init
          ===============================================*/
         $('.player').mb_YTPlayer();
-	
-		/* ==================================================
-			# Accordion Menu
-		 =============================================== */
-		
-		  $(document).on('click','.panel-group .panel',function(e) {
-			e.preventDefault();
-			$(this).addClass('panel-active').siblings().removeClass('panel-active');
-		});
-		
+
+        /* ==================================================
+        	# Accordion Menu
+         =============================================== */
+
+        $(document).on('click', '.panel-group .panel', function(e) {
+            e.preventDefault();
+            $(this).addClass('panel-active').siblings().removeClass('panel-active');
+        });
+
         /* ==================================================
             # imagesLoaded active
         ===============================================*/
@@ -121,8 +121,8 @@
             });
 
         });
-		
-		
+
+
         /* ==================================================
             # Magnific popup init
          ===============================================*/
@@ -185,15 +185,15 @@
                 }
             });
         });
-		
+
 
         /* ==================================================
             # Partner Carousel
          ===============================================*/
-		
+
         $('.brand-wrapper').owlCarousel({
             loop: true,
-            margin:30,
+            margin: 30,
             nav: false,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
@@ -213,14 +213,14 @@
                 }
             }
         });
-		
-		/* ==================================================
+
+        /* ==================================================
             # Partner Carousel
          ===============================================*/
-		
+
         $('.brand-2-wrapper').owlCarousel({
             loop: true,
-            margin:30,
+            margin: 30,
             nav: false,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
@@ -240,34 +240,34 @@
                 }
             }
         });
-		
-		
-		
+
+
+
         /* ==================================================
             # Hero Slider Carousel
          ===============================================*/
-		
+
         $('.hero-slider').owlCarousel({
             loop: true,
             nav: true,
             dots: false,
             autoplay: true,
-			autoplayTimeout:5000,
+            autoplayTimeout: 5000,
             items: 1,
             navText: [
                 "<i class='ti-angle-left'></i>",
                 "<i class='ti-angle-right'></i>"
             ],
         });
-		
 
-		/* ==================================================
+
+        /* ==================================================
             # Feedback
          ===============================================*/
-		
-			$('.partner-wrapper').owlCarousel({
+
+        $('.partner-wrapper').owlCarousel({
             loop: true,
-            margin:30,
+            margin: 30,
             nav: false,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
@@ -280,22 +280,22 @@
                     items: 1
                 },
                 600: {
-                    items: 2
+                    items: 4
                 },
                 1000: {
                     items: 6
                 }
             }
         });
-		
-		
-		/* ==================================================
+
+
+        /* ==================================================
             # Review
          ===============================================*/
-		
-			$('.rev-sldr').owlCarousel({
+
+        $('.rev-sldr').owlCarousel({
             loop: true,
-            margin:30,
+            margin: 30,
             nav: true,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
@@ -315,14 +315,14 @@
                 }
             }
         });
-		
-		/* ==================================================
+
+        /* ==================================================
             # Review 3
          ===============================================*/
-		
-			$('.rev-3-sldr').owlCarousel({
+
+        $('.rev-3-sldr').owlCarousel({
             loop: true,
-            margin:30,
+            margin: 30,
             nav: false,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
@@ -342,15 +342,15 @@
                 }
             }
         });
-		
-		
-		/* ==================================================
+
+
+        /* ==================================================
             # Review 4
          ===============================================*/
-		
-			$('.rev-4-sldr').owlCarousel({
+
+        $('.rev-4-sldr').owlCarousel({
             loop: true,
-            margin:30,
+            margin: 30,
             nav: true,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
@@ -370,16 +370,16 @@
                 }
             }
         });
-		
-		
-		
-		/* ==================================================
+
+
+
+        /* ==================================================
             # Service Slider
          ===============================================*/
-		
-		$('.serv-sldr').owlCarousel({
+
+        $('.serv-sldr').owlCarousel({
             loop: true,
-            margin:30,
+            margin: 30,
             nav: false,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
@@ -399,15 +399,15 @@
                 }
             }
         });
-		
-		
-		/* ==================================================
+
+
+        /* ==================================================
             # Blog Slider
          ===============================================*/
-		
-		$('.blogg-slider').owlCarousel({
+
+        $('.blogg-slider').owlCarousel({
             loop: true,
-            margin:30,
+            margin: 30,
             nav: false,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
@@ -427,14 +427,14 @@
                 }
             }
         });
-		
-		/* ==================================================
+
+        /* ==================================================
             # Blog 3 Slider
          ===============================================*/
-		
-		$('.blog-sldr').owlCarousel({
+
+        $('.blog-sldr').owlCarousel({
             loop: true,
-            margin:30,
+            margin: 30,
             nav: true,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
@@ -454,14 +454,14 @@
                 }
             }
         });
-		
-		/* ==================================================
+
+        /* ==================================================
             # Portfolio Slider
          ===============================================*/
-		
-		$('.prt-sldr').owlCarousel({
+
+        $('.prt-sldr').owlCarousel({
             loop: true,
-            margin:30,
+            margin: 30,
             nav: false,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
@@ -481,14 +481,14 @@
                 }
             }
         });
-		
-		/* ==================================================
+
+        /* ==================================================
             # Review 2 Slider
          ===============================================*/
-		
-		$('.rev-2-sldr').owlCarousel({
+
+        $('.rev-2-sldr').owlCarousel({
             loop: true,
-            margin:30,
+            margin: 30,
             nav: false,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
@@ -508,35 +508,35 @@
                 }
             }
         });
-		
-		
+
+
         /* ==================================================
             # About 3 Feat Carousel
          ===============================================*/
 
-		 var swiper = new Swiper('.about-3-feat.swiper-container', {
-		  slidesPerView: 2,
-		  spaceBetween: 30,
-		  pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		  },
-		});
+        var swiper = new Swiper('.about-3-feat.swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
 
-		
-		/* ==================================================
+
+        /* ==================================================
           # Pie Chart 
          ===============================================*/
-		
-		$('.chart').easyPieChart({
-			size:140,
-			barColor:'#42538F',
-			scaleColor:false,
-			lineWidth:15,
-			trackColor:'#f5f5f5'
-		});
-		
-		
+
+        $('.chart').easyPieChart({
+            size: 140,
+            barColor: '#42538F',
+            scaleColor: false,
+            lineWidth: 15,
+            trackColor: '#f5f5f5'
+        });
+
+
         /* ==================================================
             # Fun Factor Init
         ===============================================*/
@@ -555,9 +555,9 @@
             // Animate loader off screen
             $(".se-pre-con").fadeOut("slow");
         });
-        
-		
-		 /* ==================================================
+
+
+        /* ==================================================
             Contact Form Validations
         ================================================== */
         $('.contact-form').each(function() {
@@ -576,7 +576,7 @@
                     $.post(action, {
                             name: $('#name').val(),
                             email: $('#email').val(),
-							subject: $('#subject').val(),
+                            subject: $('#subject').val(),
                             website: $('#website').val(),
                             comments: $('#comments').val()
                         },
@@ -593,42 +593,42 @@
                 return false;
             });
         });
-		
-		/* ==================================================
-		# Chart Canvas
-		===============================================*/
-		
-	
 
-		
-		/* ==================================================
-		# Slick nav
-		 ===============================================*/
+        /* ==================================================
+        # Chart Canvas
+        ===============================================*/
 
-		 $('.testimonial-active').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			arrows: false,
-			fade: true,
-			asNavFor: '.test-img-active',
-			autoplay: true,
-			autoplaySpeed: 5000,
-		});
 
-		$('.test-img-active').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			asNavFor: '.testimonial-active',
-			dots: false,
-			centerMode: true,
-			focusOnSelect: true,
-			arrows: false,
-		});
 
-		$(".testimonial-active").slick({
-			lazyLoad: 'ondemand', // ondemand progressive anticipated
-			infinite: true
-		});
-		
+
+        /* ==================================================
+        # Slick nav
+         ===============================================*/
+
+        $('.testimonial-active').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.test-img-active',
+            autoplay: true,
+            autoplaySpeed: 5000,
+        });
+
+        $('.test-img-active').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.testimonial-active',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            arrows: false,
+        });
+
+        $(".testimonial-active").slick({
+            lazyLoad: 'ondemand', // ondemand progressive anticipated
+            infinite: true
+        });
+
     }); // end document ready function
 })(jQuery); // End jQuery
