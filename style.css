@@ -4063,3 +4063,8 @@ html {
 .font-16px {
     font-size: 16px !important;
 }
+
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
