@@ -109,15 +109,14 @@
 						<div class="row">
 							<div class="col-xl-6">
 								<div class="hero-content">
-									<span class="hero-p1 hero-sm text-white">Payments & Reconciliations made easy</span>
+									<span class="hero-p1 hero-sm text-white">Client Solutions made easy</span>
 									<h2 class="text-white">
 										Digitize your<br> <span class="text-secondary">Workflows Easily</span>
 									</h2>
 									<p class="text-white">
-										We are a customer engagement and experience business, developing channels that businesses use to engage their customers and enabling payments across all these channels. 
-									</p>
+										By weaving together technology consulting, systems development and project implementation services. The Plan Bee International Limited prides itself in creating innovative approaches to focus on client needs.									</p>
 									<div class="hro-btn">
-										<a href="contact.html" class="theme-btn btn-secondary-alt">+ Contact Us</a>
+										<button  type="button" class="theme-btn btn-secondary-alt" data-toggle="modal" data-target="#exampleModal"> + Contact Us </button>
 									</div>
 									<img class="hdr-shape" src="assets/img/header/honey-circles.svg" style="height: 150px; opacity: 0.3;" alt="thumb">
 								</div>
@@ -319,7 +318,7 @@
 							<img src="assets/img/service/payments.jpg" alt="thumb">
 						</div>
 						<div class="serv-icon">
-							<i class="flaticon-hand"></i>
+							<i class="flaticon-dashboard"></i>
 						</div>
 						<div class="serv-content">
 							<h4>System Development</h4>
@@ -332,10 +331,9 @@
 							<p>
 								We focus on our clients’ requirements and follow a results management implementation to ensure we exceed their expectations
 							</p>
+							<br>
 							<span class="top-sub text-capitalize font-12px">System Development</span>
-							<br>
-							<br>
-							<br>
+							
 						</div>
 					</div>
 					<div class="serv-box">
@@ -344,7 +342,7 @@
 							<img src="assets/img/service/channels.jpg" alt="thumb">
 						</div>
 						<div class="serv-icon">
-							<i class="flaticon-networking"></i>
+							<i class="flaticon-robotic"></i>
 						</div>
 						<div class="serv-content">
 							<h4>Technology Consulting</h4>
@@ -354,9 +352,10 @@
 							<p>
 								We leverage on our expertise and experience to support our clients’ projects and programs, to provide expert opinion and advise on technology needs and to see them through to successful completion.
 							</p>
-							<span class="top-sub text-capitalize font-12px">Consulting</span>
 							<br>
+							<span class="top-sub text-capitalize font-12px">Technology Consulting</span>
 							<br>
+							<div class="mb-4"></div>
 						</div>
 					</div>
 					<div class="serv-box">
@@ -366,7 +365,7 @@
 						</div>
 
 						<div class="serv-icon">
-							<i class="flaticon-robotic"></i>
+							<i class="flaticon-dashboard-3"></i>
 						</div>
 						<div class="serv-content">
 							<h4> Project Implementation </h4>
@@ -376,12 +375,13 @@
 							<p>
 								We work closely with our clients to develop a detailed project plan and a logical framework to ensure programs are implemented on budget and on time. 
 							</p>
+							<p>
 								Our experienced staff provide both subject matter expertise and also change management capabilities to ensure full adoption of client programs
 							</p>
-							<span class="top-sub text-capitalize font-12px">Implementation</span>
 							<br>
-							
-						
+							<span class="top-sub text-capitalize font-12px">Project Implementation</span>
+							<br>
+							<br>
 						</div>
 					</div>
 					<!--<div class="serv-box d-none">
@@ -545,6 +545,49 @@
 		</div>
 	</footer>	
 	<!-- End Footer-->
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+						  <label for="full_name" class="col-form-label">Full Name:</label>
+						  <input type="text" class="form-control" id="full_name">
+						</div>
+						<div class="form-group">
+							<label for="email" class="col-form-label">Email:</label>
+							<input type="email" class="form-control" id="email">
+						</div>
+						<div class="form-group">
+							<label for="org" class="col-form-label">Organisation:</label>
+							<input type="text" class="form-control" id="org">
+						</div>
+						<div class="form-group">
+							<label for="role" class="col-form-label">Role:</label>
+							<input type="text" class="form-control" id="role">
+						</div>
+						<div class="form-group">
+							<label for="phone" class="col-form-label">Phone Number:</label>
+							<input type="number" class="form-control" id="phone">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Submit</button>
+				</div>
+			</div>
+		</div>
+  </div>
 	
 	<!-- Start Scroll top
 	============================================= -->
@@ -577,6 +620,12 @@
     <script src="assets/js/bsnav.min.js"></script>
     <script src="assets/js/jquery.easypiechart.js"></script>
     <script src="assets/js/main.js"></script>
+
+	<script>
+		$('#myModal').on('shown.bs.modal', function () {
+			$('#myInput').trigger('focus')
+		})
+	</script>
 	
 </body>
 
